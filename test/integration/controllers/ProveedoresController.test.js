@@ -31,5 +31,13 @@ describe('ProveedoresController', function() {
           done(err);
         });
     });
+    it('deberia retornar error 404 not found', function(done) {
+      supertest(sails.hooks.http.app)
+        .get('/proveedores/100')
+        .expect(404, function(err, res){
+          //console.log(res.body);
+          done(err);
+        });
+    });
   });
 });
