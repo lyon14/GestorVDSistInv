@@ -1,26 +1,15 @@
 # gestor-bd-sist-inv
 
-a [Sails v1](https://sailsjs.com) application
+## Descripción del proyecto
 
+El proyecto Base-Sails utiliza el framework SailsJS para la creación de una API RESTful. Esta aplicación utiliza una base de datos postgresql.
 
-### Links
+## Requerimientos
 
-+ [Sails framework documentation](https://sailsjs.com/get-started)
-+ [Version notes / upgrading](https://sailsjs.com/documentation/upgrading)
-+ [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
-+ [Community support options](https://sailsjs.com/support)
-+ [Professional / enterprise options](https://sailsjs.com/enterprise)
-
-
-### Version info
-
-This app was originally generated on Thu Jun 29 2023 19:59:51 GMT-0400 (hora estándar de Chile) using Sails v1.5.4.
-
-<!-- Internally, Sails used [`sails-generate@2.0.8`](https://github.com/balderdashy/sails-generate/tree/v2.0.8/lib/core-generators/new). -->
-
-
-
-<!--
-Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
--->
-
+1. Instalar [https://www.postgresql.org/download/windows/](https://www.postgresql.org/download/windows/) V.15.
+2. Instalar nodeJS recomendado v16.20.0 [https://nodejs.org/en](https://nodejs.org/en).
+3. Despues de instalar node se deben instalar dependencias globales. SailsJs `npm install sails -g` [https://sailsjs.com/get-started](https://sailsjs.com/get-started)
+4. Para los test instalar de forma global instalar mocha `npm install --global mocha`.
+5. Instalado de forma global se debe ejecutar en consola dentro del directorio del proyectos `npm i` para instalar todas las dependencias.
+6. en pgadmin o el gestor de la base de datos de postgrest crear la base de datos `nano`.
+7. Finalmente en la consola del proyecto ejecutar `sails lift` para ejecutar el servidor >[http://localhost:8100/](http://localhost:8100/), para ejecutar el test se utiliza`npm test` en consola para ejecutar los test.
