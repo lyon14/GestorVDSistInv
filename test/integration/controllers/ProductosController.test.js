@@ -31,11 +31,11 @@ describe('ProductosController', function() {
           done(err);
         });
     });
-    it('deberia retornar error 404 not found', function(done) {
+    it('deberia retornar error 400 bad request porque no es un int(id) si no que un string()', function(done) {
       supertest(sails.hooks.http.app)
-        .get('/productos/100')
-        .expect(404, function(err, res){
-          //console.log(res.body);
+        .get('/productos/asd')
+        .expect(400, function(err, res){
+          //console.log(res);
           done(err);
         });
     });
